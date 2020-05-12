@@ -1,0 +1,6 @@
+* text=auto
+plugins/* linguist-vendored
+platform/* linguist-vendored
+*.js linguist-detectable=false
+*.html linguist-detectable=false
+*.css linguist-detectable=false
