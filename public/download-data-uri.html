@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Download data URI</title>
+    <meta name="robots" content="noindex, nofollow">
+    <style>
+      body {
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+      }
+    </style>
+  </head>
+
+  <body id="page">
+    <h2>Wait for download...</h2>
+  </body>
+
+  <script>
+    var uri = new URL(location.href).searchParams.get("datauri");
+    location.href = uri;
+    var newPage = window.open(uri, "_blank");
+
+    // Popup blocked
+    if (!newPage || newPage.closed || typeof newPage.closed == "undefined") {
+      var filename = new URL(location.href).searchParams.get("filename");
+
+      document.body.innerHTML = `
+              <h3>Download "${filename}"</h3>
+              <a download="${filename}" href="${uri}"><strong>Dowload</strong></a>
+          `;
+    } else window.close();
+  </script>
+</html>
