@@ -5,7 +5,6 @@ Tiny fast flashcard cross-platform app. [Live demo](https://jackhammer-204e5.fir
 ![screenshot](doc_res/1.png)
 ![screenshot](doc_res/2.png)
 ![screenshot](doc_res/3.png)
-![screenshot](doc_res/4.png)
 
 Small Cordova app for language learning. I was bored by too many options and fields of classic flashcards apps. This app provides the essential features to add and delete words, import and export word lists, and some shortcut to speed up the addition and deletion of words. It also provides some pretty themes and UI language. App available for web (experimental), iOS and Android. Download available (maybe 😴) on **Play and App Store**.
 
